@@ -167,6 +167,18 @@ header.masthead {
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #65A4D7, #61DCAA);
 }
 
+header.masthead-error {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  color: white;
+  background: url("../img/bg-pattern.png"), #4d4d4d;
+  background: url("../img/bg-pattern.png"), -webkit-gradient(linear, right top, left top, from(#4d4d4d), to(#9c9c9c));
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #4d4d4d, #9c9c9c);
+}
+
 header.masthead .header-content {
   max-width: 500px;
   text-align: center;
@@ -201,6 +213,25 @@ header.masthead .device-container .screen img {
     font-size: 50px;
   }
   header.masthead .device-container {
+    max-width: 325px;
+  }
+}
+
+@media (min-width: 992px) {
+  header.masthead-error {
+    height: 100vh;
+    min-height: 775px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header.masthead-error .header-content {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  header.masthead-error .header-content h1 {
+    font-size: 50px;
+  }
+  header.masthead-error .device-container {
     max-width: 325px;
   }
 }
