@@ -1,65 +1,69 @@
-
 <!DOCTYPE html>
 
 <html style="width: 100%;">
-    <body style="width: 100%;
+
+<body style="width: 100%;
                  margin: 0;
                  padding: 0;
                  font-family: Helvetica, Arial, sans-serif;
                  font-size: 16px;
                  line-height: 22px;">
-        <div style="width: 100%; text-align: center; margin: 36px 0">
-            <a href="https://atmos.ddnsking.com/landing/">
-                <img src="img/logo_fill.png" style="width: 120px;">
-            </a>
-        </div>
-        <div style="padding: 0 10%;">
-            <h1 style="color: #293043;">
-                Hola {{.UserName}}!
-            </h1>
-            <p style="margin-top: 20px;
+    <div style="width: 100%; text-align: center; margin: 36px 0">
+        <a href="https://atmos.ddnsking.com/landing/">
+            <img src="img/logo_fill.png" style="width: 120px;">
+        </a>
+    </div>
+    <div style="padding: 0 10%;">
+        <h1 style="color: #293043;">
+            Hola {{.UserName}}!
+        </h1>
+        <p style="margin-top: 20px;
                       color: #293043;">
-                Thanks for joining Aquascout! We really appreciate it. Please click the button below to verify your account:
-            </p>
-            <br>
-            <div>
-                <a href="http://{{.HostName}}:{{.Port}}/api/v1/verify?e={{.EmailAddress}}&amp;t={{.AccessToken}}" style="text-decoration: none;
+            Welcome aboard! Please click the button below to verify your email address:
+        </p>
+        <br>
+        <div>
+            <a href="http://{{.HostName}}:{{.Port}}/api/v1/verify?e={{.EmailAddress}}&amp;t={{.AccessToken}}" style="text-decoration: none;
                           font-weight: bold;
                           color: #FFF;
                           background-color: #65A4D7;
                           border-radius: 4px;
-                          padding: 10px 20px;">verify account</a>
-            </div>
-            <p style="margin: 40px 0 0;
+                          padding: 10px 20px;">verify
+                account</a>
+        </div>
+        <p style="margin: 40px 0 0;
 					color: #293043;">
-                If you have any problems, please contact us:
-                <a href="mailto:support@zeplin.io" style="text-decoration: none;
-                          color: #61DCAA;">support@aquascout.co</a>
-            </p>
-            <p style="margin: 0;
+            If you encounter any problems, please contact us at:
+            <a href="mailto:support@atmos.co" style="text-decoration: none;
+                          color: #61DCAA;">support@atmos.co</a>
+        </p>
+        <p style="margin: 0;
 					color: #99A4AE;
                     font-weight: 300;">
-                Aquascout Crew
-            </p>
-        </div>
-        <div style="text-align: center;
+            Atmos Crew
+        </p>
+    </div>
+    <div style="text-align: center;
                     vertical-align: top;
                     margin: 0 0 84px;
                     font-size: 12px;
                     font-weight: 300;">
-            <a href="https://mandrillapp.com/track/click/30339184/twitter.com?p=eyJzIjoiRXE1OVlvOUhvWmpWQ0drOVp2M1pObW03dnIwIiwidiI6MSwicCI6IntcInVcIjozMDMzOTE4NCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3R3aXR0ZXIuY29tXFxcL3plcGxpbl9pb1wiLFwiaWRcIjpcIjg4MjMyMGYyNmYzYTRjNTRiMTQyZDg0MmM3MzU0MTIzXCIsXCJ1cmxfaWRzXCI6W1wiYjg4NDE1MWIxZWU1NGRjNzU1NjcyNjM3ODkyMDFiMTUzODRjODZhZVwiXX0ifQ" style="text-decoration: none;
+        <a href="https://mandrillapp.com/track/click/30339184/twitter.com?p=eyJzIjoiRXE1OVlvOUhvWmpWQ0drOVp2M1pObW03dnIwIiwidiI6MSwicCI6IntcInVcIjozMDMzOTE4NCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3R3aXR0ZXIuY29tXFxcL3plcGxpbl9pb1wiLFwiaWRcIjpcIjg4MjMyMGYyNmYzYTRjNTRiMTQyZDg0MmM3MzU0MTIzXCIsXCJ1cmxfaWRzXCI6W1wiYjg4NDE1MWIxZWU1NGRjNzU1NjcyNjM3ODkyMDFiMTUzODRjODZhZVwiXX0ifQ"
+            style="text-decoration: none;
 					color: #61DCAA;">
-                <img src="https://app.zeplin.io/img/emailAssets/logoTwitter@48w.png" style="width: 24px;"><br>
-                follow Atmos
-            </a>
+            <img src="https://app.zeplin.io/img/emailAssets/logoTwitter@48w.png" style="width: 24px;"><br>
+            follow Atmos
+        </a>
+    </div>
+    <div itemscope="" itemtype="http://schema.org/EmailMessage">
+        <div itemprop="potentialAction" itemscope="" itemtype="http://schema.org/ViewAction">
+            <link itemprop="target" href="">
+            <link itemprop="url" href="">
+            <meta itemprop="name" content="Verify account">
         </div>
-        <div itemscope="" itemtype="http://schema.org/EmailMessage">
-			<div itemprop="potentialAction" itemscope="" itemtype="http://schema.org/ViewAction">
-		    	<link itemprop="target" href="https://app.zeplin.io/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1YTc5NDMwZmQ2OTNkYjVjOTljMzMwOWIiLCJwYXNza2V5IjoiMjEzN2IyODUtYzNmNi00NmIyLThhNjUtNjhlM2I0YTAxZGVkIiwiZW1haWxWZXJpZmllZCI6ZmFsc2UsIndoaXRlbGlzdCI6WyIvdXNlcnMvdmVyaWZ5Il0sImlhdCI6MTUxODQxOTgzMywiZXhwIjoxNTE4Njc5MDMzLCJpc3MiOiJ6ZXBsaW46YXBpLnplcGxpbi5pbyJ9.40eYOgLLkeo-r4esYGd6hdJwibc--2EaMc5MvPp_3TA">
-		    	<link itemprop="url" href="https://app.zeplin.io/verify?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1YTc5NDMwZmQ2OTNkYjVjOTljMzMwOWIiLCJwYXNza2V5IjoiMjEzN2IyODUtYzNmNi00NmIyLThhNjUtNjhlM2I0YTAxZGVkIiwiZW1haWxWZXJpZmllZCI6ZmFsc2UsIndoaXRlbGlzdCI6WyIvdXNlcnMvdmVyaWZ5Il0sImlhdCI6MTUxODQxOTgzMywiZXhwIjoxNTE4Njc5MDMzLCJpc3MiOiJ6ZXBsaW46YXBpLnplcGxpbi5pbyJ9.40eYOgLLkeo-r4esYGd6hdJwibc--2EaMc5MvPp_3TA">
-	    		<meta itemprop="name" content="Verify account">
-		    </div>
-		    <meta itemprop="description" content="Verify your account in Zeplin">
-		</div>
-    <img src="https://mandrillapp.com/track/open.php?u=30339184&id=882320f26f3a4c54b142d842c7354123" height="1" width="1"></body>
+        <meta itemprop="description" content="Verify your account">
+    </div>
+    <img src="https://mandrillapp.com/track/open.php?u=30339184&id=882320f26f3a4c54b142d842c7354123" height="1" width="1">
+</body>
+
 </html>
